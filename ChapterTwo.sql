@@ -130,7 +130,6 @@ SHOW DATABASES;
 USE cape_codd;
 
 SELECT SKU, SKU_Description FROM INVENTORY;
-
 SELECT INVENTORY.SKU, INVENTORY.SKU_Description, WAREHOUSE.WarehouseID, WAREHOUSE.WarehouseCity, WAREHOUSE.WarehouseState FROM INVENTORY
 JOIN WAREHOUSE ON INVENTORY.WarehouseID = WAREHOUSE.WarehouseID WHERE WAREHOUSE.WarehouseCity = 'Atlanta' OR WAREHOUSE.WarehouseCity = 'Bangor' OR WAREHOUSE.WarehouseCity = 'Chicago';
 
